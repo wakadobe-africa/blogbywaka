@@ -25,4 +25,7 @@ jobs:
       with:
         server: ftpupload.net
         username: if0_41420812
-        password: ${{ secrets.password }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: /htdocs/
+        local-dir: ./dist/
+        dangerous-clean-slate: true
