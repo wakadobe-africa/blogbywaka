@@ -10,17 +10,17 @@ import { AppNameProvider } from './context/AppNameContext.jsx'
 import { ProductProvider } from './context/ProductContext.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <AppNameProvider> */}
-      {/* <ProductProvider> */}
+    <AppNameProvider>
+      <ProductProvider>
     {/* <App /> */}
     
     {/* <Bank/> */}
-    {/* <Inventory/> */}
+    <Inventory/>
     {/* <Meal/> */}
-    {/* </ProductProvider> */}
+    </ProductProvider>
     
-    {/* </AppNameProvider> */}
-    <Blogger/>
+    </AppNameProvider>
+    {/* <Blogger/> */}
   </StrictMode>,
   // fragment 
   // <div>
